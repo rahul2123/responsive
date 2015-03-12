@@ -1,0 +1,511 @@
+/* defualt screen*/
+body{
+font-size:14px;
+font-family: verdana;
+color: #666;
+}
+.label{font-size: 16px;
+color:white;
+position:relative;
+background-color:#666;
+display:inline-block;
+padding:2px;
+box-sizing: border-box;
+}
+strong{
+margin-left: 0.5em;
+}
+.label::after{
+position:absolute;
+top:0;
+right:0;
+content:"";
+margin-right:-25px;
+border-right:25px solid transparent;
+
+border-bottom:22px solid #666;
+box-sizing: border-box;
+
+}
+
+.container{
+margin:0 auto;
+width: 90%;
+box-sizing: border-box;
+}
+.wrapper{
+border:1px solid #666;
+box-sizing: border-box;
+margin-top: 2px;
+overflow: hidden;
+}
+.head img{
+margin-left: 1em;
+}
+.head{
+padding: 1% 1%;
+background: url(images/first.png) no-repeat;
+background-size: 100% 100%;
+}
+.separator{
+padding: 0.15em;
+background-image: url(images/black.png);
+}
+.grey{
+opacity: 0.5;
+}
+.searchbar{
+
+overflow: hidden;
+}
+.searchbar p{
+
+float: left;
+
+margin-left:1em;
+}
+.searchbox{
+border: 1px solid #666;
+border-radius: 5px;
+margin-top: 0.5em;
+margin-right: 0.5em;
+display: block;
+float: right;
+}
+.button{
+border: none;
+background: url(images/search.png)-5px -6px no-repeat;
+width: 2em;
+height: 1.9em
+}
+.searchfield{
+padding: 0.2em;
+border: none;
+margin-right: -0.3em;
+vertical-align: top;
+width: 12em;
+height: 1.5em;
+}
+.banner{
+padding: 1% 1%;
+background: url(images/banner.png) no-repeat 100% 100%;
+background-size: 100% 100%;
+border-bottom: 1px solid #666;
+margin-bottom: 20px;:
+}
+h2{
+margin-top: 0;
+line-height: -0.5em;
+font-size: 6em;
+margin-left: 11%;
+color: #666;
+}
+span{
+line-height: 0.5em;
+color: white;
+}
+.collateral{
+font-weight: normal;
+
+color:#0d72a8;
+margin-top: -1em;
+margin-left: 19%;
+}
+.message{
+margin-top: -4em;
+margin-left: 16em;
+width: 28em;
+font-size: 1.1em;
+}
+.main-content{
+	vertical-align: top;
+
+display: table-cell;
+}
+.content{
+display: table;
+overflow: hidden;
+}
+.resmenu{
+display: none;
+}
+.menu{
+	display: table-cell;
+
+width: 20%;
+overflow: hidden;
+
+border: 1px solid #666;
+border-left: none;
+box-sizing: border-box;
+}
+nav img{
+float: left;
+padding-right: 5px;
+margin-top: 2px;
+}
+ul{
+padding: 0;
+}
+li{
+padding: 0.5em 1em 0.5em 1em;
+border-top: 1px solid #666;
+border-bottom: : 1px solid #666;
+list-style-type: none;
+}
+li:last-child{
+border-bottom: 1px solid #666;
+}
+h3{
+margin-left: 1em;
+margin-top: 0;
+margin-bottom: 0;
+font-size: 1em;
+color:#666;
+}
+
+.main-content .panel:nth-child(2){
+border-top: 2px solid #666;
+}
+.main-content .panel:last-child{
+border-bottom: 2px solid #666;
+}
+.panel{
+padding: 5px 0;
+border-top: 1px solid #666;
+border-bottom: 1px solid #666;
+overflow: hidden;
+
+}
+.contpanel{
+padding: 1em ;
+margin-left: 6px;
+border-right: 1px solid #666;
+float: left;
+box-sizing: border-box;
+}
+.panel .contpanel:last-child{
+border:none;
+}
+.contpanel img{float: left;}
+.contpanel h4{
+margin:0 0 0 5px;
+display: inline-block;
+}
+.grids{
+float: left;
+}
+.imgholder{
+float: right;
+margin-left: 9em;
+border-radius: 5px;
+background-color: #999;
+
+height: 10em;
+width:10em;
+}
+.info{
+float: left;
+}
+.info p:nth-child(2){
+font-size: 1.2em;
+margin-top: 50px;
+margin-bottom: 40px;
+}
+.info p:nth-child(3),.info p:nth-child(4){
+line-height: 0;
+
+}
+button{
+display: block;
+margin:10px auto;
+}
+.loadmore{
+border-top: 1px solid #666;
+
+
+}
+li a{
+color: #000;
+font-weight: bold;
+}
+.contpanel a{
+color: #666;
+}
+a{
+text-decoration: none;
+color: #4ba2f2;
+}
+footer{
+margin:1em;
+clear: both;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*media queries for screen less than 1366px*/
+
+
+@media screen and (max-width: 1366px)  {
+
+
+.contpanel{
+	padding: 0;
+	padding-right: 0.2em;
+
+}
+}
+
+
+
+
+
+/*media queries for screen less than 1024px*/
+
+@media screen and (max-width: 1024px){
+.content{display: block;}
+
+.imgholder{
+	float: left;
+	margin-left:0;
+
+}
+h2{
+	margin-left: 8%;
+}
+.message{
+	margin-left: 11em;
+}
+}
+
+
+
+
+
+
+
+/*media queries for  768px*/
+@media screen and (max-width: 768px){
+.resmenu{
+	border-radius: 5px;
+	margin:auto;
+	width: 80%;
+	border: 1px solid #666;
+	text-align: center;
+	display:block;
+}
+.menu{
+display: none;
+border-radius: 5px;
+	width: 80%;
+position: static;
+float: none;
+margin:auto;
+border: 1px solid #666 ;
+bottom: initial;
+}
+h3{text-align: center;}
+.contpanel{
+margin:auto;
+	width: 50%;
+}
+h2{margin-left: 9%;
+	font-size: 4em;
+
+}
+.searchbar p{
+	font-size: 0.7em;
+	line-height: 1em;
+}
+.message{
+	margin-top: -3em;
+	margin-left: 12em;
+	font-size: 0.7em;
+}
+.switch{
+	display: none;
+}
+footer p{
+	font-size: 10px;
+}
+.searchbox{margin:0;}
+.searchbar{
+	padding: 0.4em;
+}
+.info p:nth-child(3),.info p:nth-child(4){
+
+	line-height: 1;
+}
+.info{
+	width: 50%;
+}
+.imgholder{
+	
+	margin-top: 5em;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries for screen less than 640x*/
+@media screen and (max-width: 640px){
+.searchbar{
+margin:auto;
+text-align: center;
+}
+.head{
+text-align: center
+}
+
+
+.head{
+	background-image: none;
+
+}
+
+span{
+color:#666;
+}
+
+strong{
+font-size: 25px;
+}
+
+h2{
+font-size: 2.6em;
+}
+
+.label{
+width:100%;
+text-align: center;
+}
+
+.label:after{
+display: none;
+}
+
+.banner{text-align: center;
+background:none;
+background-color: #fff;
+}
+
+.searchbar p{
+float: none;
+}
+
+.searchbox{
+width: 50%;
+margin: 1em auto;
+float: none;
+}
+
+.searchfield{
+width:80%;
+}
+
+h2, .collateral{
+margin: 0 auto;
+}
+
+.message{
+	font-size: 0.8em;
+font-weight: bold;
+color: #000;
+margin : 0 auto;
+}
+
+footer{
+margin: auto;
+}
+
+
+.panel{border: none;
+border-bottom: 1px solid #666;}
+.contpanel{border: none;
+padding: 1em;
+margin:0;
+border-bottom: 1px solid #666;
+width: 100%;
+}
+.imgholder{
+	float: right;
+
+}
+.switch{display: none;}
+
+.resmenu{
+border-radius: 5px;
+text-align: center;
+border:1px solid #666;
+}
+.resmenu,.menu	{
+width: 80%;
+margin:auto;
+display: block;
+}
+.menu{
+border-radius: 5px;
+	display: none;
+position: static;
+float: none;
+border: 1px solid #666 ;
+bottom: initial;
+}
+.info{
+	width: auto;
+}
+}
+
+
+@media screen and (max-width: 480px){
+.contpanel{
+	margin: auto;
+}
+	.info,.imgholder{float: none;
+
+		
+	}
+	.imgholder{
+		margin:auto;
+		margin-top: 0;
+	}
+footer{
+	margin: 0.5em;
+}
+}
+
+@media screen and (max-width: 320px){
+.searchbox{
+	border:none;
+	width: 100%;
+}
+.button{
+	padding: 13px;
+}
+.searchfield,.button{
+	margin-right: -5px;
+	border:1px solid #666;
+}
+}
